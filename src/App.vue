@@ -80,7 +80,7 @@ export default {
 <style>
 
 :root {
-    --bs-body-bg: #7d84b2;
+    --bs-body-bg: #2F4F4E;
 }
 
 
@@ -105,9 +105,10 @@ ul {
     margin-right: auto;
     border-radius: 15px;
     border-width: 2px 2px 2px 2px;
-    background-color: #a3b1de;
+    background: rgba(255, 255, 255, 0.1);
     max-width: 1000px;
     justify-content: center;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6);
 }
 
 .minput_container {
@@ -121,41 +122,39 @@ ul {
 }
 
 .minput {
-    display: block;
-    width: 30%;
-    padding: 0.375rem 0.75rem;
-    border-radius: 10px !important;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: 0.25rem;
+    all: unset;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border-radius: 50px;
+    border:#fff solid 1px;
+    width: 250px;
+    height: 40px;
+    font-size: 18px;
+    padding: 0 30px;
+    transition: all .3s;
+}
+.minput::placeholder {
+    color: #fff;
+}
+.minput:focus {
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6);
 }
 
 .minput_btn {
-    display: flex;
-    align-items: center;
-    margin-left: 5px;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
+    all: unset;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 20px;
     text-align: center;
-    white-space: nowrap;
-    background-color: #d7d7e9;
-    border: 1px solid #aab0b5;
-    border-radius: 0.25rem;
+    padding: 0 20px;
+    margin: 0 5px;
+    color: #fff;
+    transition: all .3s;
 }
 
 .minput_btn:hover {
-
+    background: #fff;
+    color: #2F4F4E;
 }
 
 .minput_btn:active {
@@ -164,17 +163,18 @@ ul {
 
 .mtodo_block {
     font-family: 'Oswald', sans-serif;
-    background-color: #ffffff;
-    margin: 20px 20px 20px 20px;
+    background: rgba(255, 255, 255, 0.1);
     height: auto;
     padding: 1rem;
-    margin: 1rem -0.75rem 0;
+    margin: 40px -0.75rem 0;
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
     border-width: 2px 2px 2px 2px;
     max-width: 1000px;
     justify-content: space-between;
+    color: #fff;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6);
 }
 
 .grid {

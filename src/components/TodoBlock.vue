@@ -12,7 +12,7 @@
                     v-else 
                     :class="{cross_out: note.done}">
                     {{ note.title }}
-                </label>
+                    </label>
                 </div>
                 
                 <div>

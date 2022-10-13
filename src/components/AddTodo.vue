@@ -5,7 +5,7 @@
           :value="inputValue" 
           @input="inputChange"
           @keypress.enter="addTodo">
-          <button type="button" class="minput_btn" @click="addList">Добавить</button>
+          <button type="button" class="minput_btn" @click="addTodo">Добавить</button>
           <button type="button" class="minput_btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Удалить все задачи
           </button>
